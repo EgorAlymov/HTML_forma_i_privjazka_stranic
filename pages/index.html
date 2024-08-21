@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Моя первая веб-страница</title>
+</head>
+<body>
+    <header>
+        <img width="30" height="30" src="C:\Users\User\Desktop\ОСНОВЫ_HTML\Сайт визитка\images\1png.png">
+        <a href="#">Главная</a>
+        <a href="C:\Users\User\Desktop\ОСНОВЫ_HTML\Сайт визитка\pages\about.html">О нас</a>
+        <a href="C:\Users\User\Desktop\ОСНОВЫ_HTML\Сайт визитка\pages\contacts.html">Контакты</a>
+    </header>
+    <main>
+        <h1>Моя первая веб-страница</h1>
+        <h2>Про меня</h2>
+        <p>Меня зовут Вася. Я работаю <strong>маркетологом</strong>. Решил получше узнать смежную профессию, чтобы разобраться как устроен веб.</p>
+        <p>Живу в Питере. Люблю кататься на велосипеде.</p>
+        <h2>Чему я хочу научиться</h2>
+        <p>На <em>этом</em> курсе я хотел бы научиться создавать сайты с нуля.</p>
+        
+        <!-- отрезок кода по видео-форма запроса -->
+        <div class="container">
+            <h2 class="forms">Заявка на тех осмотр</h2>
+            <form>
+                <br>
+                <br>
+                <fieldset>
+                    <legend>Опишите свой автомобиль</legend>
+                        <br>
+                        <br>
+                        Марка автомобиля <input type="text" name="treademark" placeholder="введите марку авто">
+                        <br>
+                        <br>
+                        Модель <input type="text" name="model" placeholder="введите модель авто" required="required">
+
+
+                        <p>Коробка передач</p>
+                        АКП <input type="radio" name="gear" value="auto" checked>
+                        МКП <input type="radio" name="gear" value="hand">
+
+                        <br>
+                        <br>
+                        Необходимо проверить<br>
+                        <input type="checkbox" name="type1" value="tor"> Тормозная жидкость<br>
+                        <input type="checkbox" name="type2" value="parall"> Сход развал<br>
+                        <input type="checkbox" name="type3" value="coolant"> Охлаждающая жидкость<br>
+                        <input type="checkbox" name="type4" value="sus"> Масло<br>
+                        <input type="checkbox" name="type5" value="cdsdc"> Тормоза<br>
+                        <input type="checkbox" name="type6" value="vsd"> Трезвость водителя<br>
+                        <br>
+                        <br>
+                        Какое масло заливать <br>
+                        <select name="oillist">
+                            <option label=""></option>
+                            <option label="Motul">Motul</option>
+                            <option label="Shell">Shell</option>
+                            <option label="Castrol" selected> Castroll</option>
+                            <option label="Oleina" disabled>Oleyna</option>
+                        </select>
+                        <br>
+                        <br>
+                        Цвет подкраски суппортов <br>
+                        <input type="color" list="colorlist" value="#cc0000"><br>
+                        <datalist id="colorlist">
+                            <option value="#ff0000" label="красный"></option>
+                            <option value="#008000" label="зеленый"></option>
+                            <option value="#0000FF" label="синий"></option>
+                            <option value="#ffffff" label="белый"></option>
+                            <option value="#cccccc" label="серый"></option>
+                        </datalist>
+                        <br>
+                        <br>
+                        Дата визита <br>
+                        <input type="date" name="visit" value="2024-08-21" mim="2024-08-20" max="2024-09-10" ><br>
+                        <br>
+                        <br>
+                        Ваша почта <br>
+                        <input type="email" name="mail"><br>
+                        <br>
+                        <br>
+                        Ваш номер телефона <br>
+                        <input type="tel" name="phone"><br>
+                        <br>
+                        <input type="submit" name="submit">
+                        <input type="reset" name="reset">
+                </fieldset><br>
+
+                <p>Прогресс тех осмотра</p>
+                <progress value="25" max="100"></progress>
+                <fieldset>
+                    
+                    <legend>Обратная связь<br></legend>
+                    Оцените качество услуг<br>
+                    <input type="range" min="1" max="10" value="7"><br>
+                    <br>
+                    <br>
+                    Что бы хотелось улучшить?<br>
+                    <textarea name="comment" id="" cols="30" rows="10" placeholder="Ваши предложения"></textarea>
+                    <br>
+                    <br>
+                    Порекомендуете наш сервис?<br>
+                    <label for="yes">Да</label>
+                    <input type="radio" id="yes" name="choise" value="yes" checked>
+                    <label for="no">Нет</label>
+                    <input type="radio" id="no" name="choise" value="no">
+                    <br>
+                    <br>
+                    
+                </fieldset>
+                <br>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/NEKjA6n8Ge0?si=L3cZFbD4tO8nJPMn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            </form>
+
+            Списки
+            <ul style="color: brown;">
+                <li style="list-style-type: circle;"></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ol type="I">
+                <li ></li>
+                <li></li>
+                <li></li>
+            </ol>
+        </div>
+        <!-- конец отрезка кода по видео-форма запроса -->
+
+    </main>
+    <footer>
+        <span>&copy;&nbsp;Skillfactory</span>
+    </footer>
+</body>
+</html>
+
+<!-- !!!!CСЫЛКИ МЕНЯЮТСЯ ПРИ ИЗМЕНЕНИИ РАСПОЛЕЖЕНИЯ ОБЪЕКТОВ -->
+
+<!-- name указываем марку
+    placeholder серый полупозрачный фон, даем подсказку пользователю
+    required говорит о том что поле обязательно к заполнению
+    input type="submit поле формируется
+    input type="radio"  появляются точечки
+    checked указывает что точечка будет по умолчанию стоять здесь 
+    <input type="checkbox" ставим в списке галочки
+    <select> и <option> чтобы бул выпадающий список
+    disabled  запрет на выбор
+    selected в <option label="Castrol" selected> Castroll</option> название по умолчанию, если его убрать поле пустое
+    id в <datalist id="colorlist"> всегда как в list="colorlist"
+    datalist использет многие типы данных-дату,текс и др
+    <fieldset> и <legend> рамка
+    value="2024-08-21" mim="2024-08-20" max="2024-09-10" >  можно и без них
+    <input type="reset"> сброс
+    <input type="submit" name="submit" valur="МЕНЯЕМ ТЕКС КНОПКИ">
+    В списках можно поменя тип, стиль и тд
+    -->
+
+<!-- ВСТАВКА ВИДЕО...нажимаем поделиться...копируем код и вставляем -->
+
+<!-- <strong> указывает на то, что его содержание имеет большое значение, серьёзность или срочность. Браузеры обычно отображают содержимое жирным шрифтом. Обычно этот элемент отображается по умолчанию с использованием жирного шрифта -->
+
+<!-- <span>является основным строковым контейнером для фразового контента, который, по существу, ничего не представляет.
+     Он может использоваться для группировки элементов в целях стилизации (использование атрибутов class или id) или потому, что они имеет общие значения атрибутов, например lang.
+     &copy;  знак копирайда
+     &nbsp; пробел  -->
+
+<!-- <main> представляет основное содержимое тела документа. Эта область должна состоять из содержимого, которое напрямую связано с центральной темой документа или с основными функциями приложения.
+    <h1> заголовок
+    <p> представляет собой абзац. -->
+
+<!-- </a> определяет гиперссылку для перехода на определённое место на странице или на другую страницу в Интернете. 
+     <em>предназначен для слов, которые имеют подчёркнутый акцент по сравнению с окружающим текстом, который часто ограничивается словом или словами предложения и влияет на смысл самого предложения.
+     Обзначается курсиовом -->
+
+<!-- <head> содержит машиночитаемую информацию (metadata) о документе, например его заголовок, скрипты и страницы стилей.Метаданные - это, в самом простом определении, данные, что описывают данные.
+     Например, HTML-документ - это данные, но HTML также может содержать метаданные в элементе <head>, который описывает документ, например кто его написал и его резюме.-->
+    
+<!-- <meta> представляет такие метаданные, которые не могут быть представлены другими HTML-метатегами, такими как <base>, <link>, <script>, <style> или <title>.
+     charset="utf-8" Meta charset utf-8 - это указание в HTML-коде, которое сообщает веб-браузеру о том, какую кодировку следует использовать при интерпретации текста на веб-странице. Кодировка utf-8 (Unicode Transformation Format 8-bit) 
+     является одной из самых распространенных и рекомендуемых для использования в коде HTML. Она позволяет представить символы почти любого языка на планете, а также множество специальных символов и символов из разных письменностей.-->
